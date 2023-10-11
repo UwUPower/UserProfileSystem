@@ -1,0 +1,59 @@
+
+> api@0.0.1 start
+> node ./bin/www
+
+Connection error MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017
+    at NativeConnection.Connection.openUri (/Users/huntersze/Desktop/github/user-profile-system/api/node_modules/mongoose/lib/connection.js:846:32)
+    at /Users/huntersze/Desktop/github/user-profile-system/api/node_modules/mongoose/lib/index.js:351:10
+    at /Users/huntersze/Desktop/github/user-profile-system/api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (/Users/huntersze/Desktop/github/user-profile-system/api/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (/Users/huntersze/Desktop/github/user-profile-system/api/node_modules/mongoose/lib/index.js:1149:10)
+    at Mongoose.connect (/Users/huntersze/Desktop/github/user-profile-system/api/node_modules/mongoose/lib/index.js:350:20)
+    at Object.<anonymous> (/Users/huntersze/Desktop/github/user-profile-system/api/app.js:52:4)
+    at Module._compile (node:internal/modules/cjs/loader:1095:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1147:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:999:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/huntersze/Desktop/github/user-profile-system/api/bin/www:10:11)
+    at Module._compile (node:internal/modules/cjs/loader:1095:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1147:10)
+    at Module.load (node:internal/modules/cjs/loader:975:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:17:47 {
+  reason: TopologyDescription {
+    type: 'Single',
+    setName: null,
+    maxSetVersion: null,
+    maxElectionId: null,
+    servers: Map(1) { 'localhost:27017' => [ServerDescription] },
+    stale: false,
+    compatible: true,
+    compatibilityError: null,
+    logicalSessionTimeoutMinutes: null,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    commonWireVersion: null
+  }
+}
+
+> api@0.0.1 start
+> node ./bin/www
+
+(node:20919) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Successfully connect to MongoDB.
+[0mPOST /api/users/sign-up [33m400 [0m26.907 ms - 60[0m
+[0mPOST /api/users/sign-up [33m400 [0m7.048 ms - 33[0m
+[0mPOST /api/users/sign-up [33m400 [0m5.835 ms - 33[0m
+[0mPOST /api/users/sign-up [32m200 [0m108.624 ms - 242[0m
+
+> api@0.0.1 start /Users/huntersze/Desktop/github/user-profile-system/api
+> node ./bin/www
+
+(node:47145) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Successfully connect to MongoDB.
